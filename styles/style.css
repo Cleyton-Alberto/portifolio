@@ -60,6 +60,7 @@ header > h1 {
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     margin: 20px auto;
@@ -72,8 +73,19 @@ main {
     border-radius: 12px;
 }
 
-#profile {
+#aboutMe {
     text-align: center;
+}
+
+#aboutMe > h2, p {
+    padding: 10px;
+}
+
+#aboutMe > p {
+    max-width: 600px;
+
+    text-align: justify;
+    letter-spacing: -0.80px;
 }
 
 #profile > img {
