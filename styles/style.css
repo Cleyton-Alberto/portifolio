@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 :root {
+    --h1-text-color: white;
     --background: #f5f5f5;
 }
 
@@ -18,13 +19,19 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 
     padding: 10px;
 
     background-color: blueviolet;
 }
 
+header > h1 {
+    font-size: 24px;
+
+    color: var(--h1-text-color);
+}
 
 
 #menu > ul{
@@ -44,6 +51,8 @@ header {
 #menu > ul > li > a > img {
     height: 24px;
     width: 24px;
+
+    filter: invert(1);
 }
 
 #profile > img {
@@ -53,5 +62,5 @@ header {
     object-fit: cover;
     object-position: center top;
 
-    border-radius: 50%;
+    border-radius: 12px;
 }
