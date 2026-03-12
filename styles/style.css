@@ -19,6 +19,8 @@ body {
     background-color: var(--background);
 }
 
+/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -35,19 +37,16 @@ header > h1 {
     color: var(--h1-text-color);
 }
 
+/* MENU */
 
 #menu > ul{
+    display: flex;
+    gap: 10px;
     list-style: none;
-
 }
 
 #menu > a {
     text-decoration: none;
-}
-
-#menu > ul {
-    display: flex;
-    gap: 10px;
 }
 
 #menu > ul > li > a > img {
@@ -56,6 +55,8 @@ header > h1 {
 
     filter: invert(1);
 }
+
+/* MAIN */
 
 main {
     display: flex;
@@ -73,20 +74,24 @@ main {
     border-radius: 12px;
 }
 
+/* ABOUT ME */
+
 #aboutMe {
     text-align: center;
 }
 
-#aboutMe > h2, p {
+#aboutMe > h2, #aboutMe p {
     padding: 10px;
 }
 
-#aboutMe > p {
+#aboutMe p {
     max-width: 600px;
 
     text-align: justify;
-    letter-spacing: -0.80px;
+    letter-spacing: -0.3px;
 }
+
+/* PROFILE IMAGE */
 
 #profile > img {
     padding: 5px;
@@ -99,4 +104,19 @@ main {
 
     border: 5px solid var(--main-color);
     border-radius: 50%;
-}   
+}
+
+/* SOCIAL MEDIAS */
+
+#socialMedias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    padding-top: 15px;
+}
+
+#socialMedias img {
+    height: 32px;
+    width: 32px;
+}
