@@ -2,6 +2,8 @@
 
 :root {
     --main-color: rgba(109, 194, 247, 0.907);
+    --icon-filter: invert(55%) sepia(69%) saturate(517%) hue-rotate(167deg) brightness(98%) contrast(95%);
+
     --main-track-backgroud-color: white;
     --h1-text-color: white;
     --background: #f5f5f5;
@@ -80,7 +82,11 @@ main {
     text-align: center;
 }
 
-#aboutMe > h2, #aboutMe p {
+#aboutMe h2 {
+    color: var(--main-color);
+}
+
+#aboutMe h2, #aboutMe p {
     padding: 10px;
 }
 
@@ -119,4 +125,6 @@ main {
 #socialMedias img {
     height: 32px;
     width: 32px;
+
+    filter: var(--icon-filter)
 }
