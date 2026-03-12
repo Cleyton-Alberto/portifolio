@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --main-color: rgba(109, 194, 247, 0.907);
-    --icon-filter: invert(55%) sepia(69%) saturate(517%) hue-rotate(167deg) brightness(98%) contrast(95%);
+    --main-color: rgba(0, 157, 255, 0.633);
+    --icon-filter: invert(60%) sepia(80%) saturate(650%) hue-rotate(170deg) brightness(105%) contrast(105%);
+    --icon-filter-hover: invert(55%) sepia(69%) saturate(517%) hue-rotate(167deg) brightness(98%) contrast(95%);
 
     --main-track-backgroud-color: white;
     --h1-text-color: white;
@@ -58,9 +59,9 @@ header > h1 {
     filter: invert(1);
 }
 
-/* MAIN */
+/* ABOUT ME */
 
-main {
+#aboutMe {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,11 +75,7 @@ main {
     background-color: var(--main-track-backgroud-color);
 
     border-radius: 12px;
-}
 
-/* ABOUT ME */
-
-#aboutMe {
     text-align: center;
 }
 
@@ -132,5 +129,37 @@ main {
 }
 
 #socialMedias img:hover {
+    filter: var(--icon-filter-hover);
+
     transform: scale(1.2);
+}
+
+/* SKILLS */
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    margin: 20px auto;
+    padding: 10px;
+
+    width: 80vw;
+
+    background-color: var(--main-track-backgroud-color);
+
+    border-radius: 12px;
+}
+
+#skills img {
+    height: 24px;
+    width: 24px;
+
+    filter: var(--icon-filter);
+}
+
+#skills h2 {
+    padding: 10px;
+
+    color: var(--main-color);
 }
