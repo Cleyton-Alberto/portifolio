@@ -120,7 +120,7 @@ header > h1 {
     padding-top: 15px;
 }
 
-#socialMedias img {
+#socialMedias > a > img {
     height: 32px;
     width: 32px;
 
@@ -136,6 +136,7 @@ header > h1 {
 }
 
 /* SKILLS */
+
 #skills {
     display: flex;
     flex-direction: column;
@@ -214,4 +215,122 @@ header > h1 {
 
 .skill:hover img {
     transform: scale(1.2);
+}
+
+/* PROJECTS */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    margin: 20px auto;
+    padding: 10px;
+
+    width: 80vw;
+
+    background-color: var(--main-track-backgroud-color);
+
+    border-radius: 12px;
+}
+
+#projects > h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px;
+
+    color: var(--main-color);
+}
+
+#projects > h2 >img {
+    height: 24px;
+    width: 24px;
+
+    filter: var(--icon-filter);
+}
+
+.projectContainer {
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 10px;
+
+    width: 100%;
+
+    border-radius: 12px;
+
+    background: var(--background);
+}
+
+.projectImagesContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    position: relative;
+
+    margin: auto;
+
+    width: 100%;
+    max-width: 600px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.17);
+
+    transition: 0.5s ease;
+}
+
+.projectImagesContainer img {
+    height: 200px;
+    min-width: 100%;
+
+    object-fit: cover;
+}
+
+.prevButton, .nextButton {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+
+    margin-top: -22px;
+    padding: 16px;
+
+    width: auto;
+
+    color: var(--main-color);
+
+    font-weight: bold;
+    font-size: 18px;
+
+    border-radius: 0 3px 3px 0;
+
+    user-select: none;
+
+    transition: 0.6s ease;
+}
+
+.prevButton {
+    left: 0px;
+}
+
+.nextButton {
+    right: 0px;
+
+    border-radius: 3px 0 0 3px;
+}
+
+.prevButton:hover, .nextButton:hover {
+    transform: scale(1.2);
+
+    background: rgba(0, 0, 0, 0.1);
 }
