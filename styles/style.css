@@ -371,3 +371,14 @@ header > h1 > img {
     text-align: justify;
     letter-spacing: -0.3px;
 }
+
+.projectInfo > .moreText {
+    display: none;
+}
+
+.projectInfo > a {
+    color: var(--main-color);
+
+    user-select: none;
+    cursor: pointer;
+}
