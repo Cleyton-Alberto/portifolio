@@ -40,9 +40,21 @@ header {
 }
 
 header > h1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
     font-size: 24px;
 
     color: var(--h1-text-color);
+
+    cursor: pointer;
+}
+
+header > h1 > img {
+    width: 28px;
+
+    filter: invert(1);
 }
 
 /* MENU */
@@ -339,4 +351,23 @@ header > h1 {
     transform: scale(1.2);
 
     background: rgba(0, 0, 0, 0.1);
+}
+
+.projectContainer {
+    text-align: center;
+}
+
+/* PROJECT INFO */
+
+.projectInfo h3 {
+    padding-bottom: 10px;
+
+    color: var(--main-color);
+}
+
+.projectInfo p {
+    max-width: 600px;
+
+    text-align: justify;
+    letter-spacing: -0.3px;
 }
