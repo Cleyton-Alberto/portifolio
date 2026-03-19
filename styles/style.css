@@ -289,7 +289,7 @@ header > h1 > img {
     align-items: center;
     gap: 8px;
 
-    padding: 10px 10px 0px;
+    padding: 10px 10px 10px;
 
     color: var(--main-color);
 }
