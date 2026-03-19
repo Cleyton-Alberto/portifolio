@@ -359,6 +359,12 @@ header > h1 > img {
 
 /* PROJECT INFO */
 
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
 .projectInfo h3 {
     padding-bottom: 10px;
 
@@ -376,9 +382,27 @@ header > h1 > img {
     display: none;
 }
 
-.projectInfo > a {
+.projectInfo > .toggleButton {
     color: var(--main-color);
+
+    padding-left: 10px;
 
     user-select: none;
     cursor: pointer;
+}
+
+.projectLink {
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+
+    color: var(--main-color);
+}
+
+.projectLink img {
+    height: 15px;
+    width: 15px;
+
+    filter: var(--icon-filter);
 }
