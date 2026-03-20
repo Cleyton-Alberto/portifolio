@@ -558,6 +558,7 @@ header > a > h1 > img {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    gap: 20px;
 
     margin: 20px auto;
     padding: 20px;
@@ -574,7 +575,6 @@ header > a > h1 > img {
     align-items: center;
     gap: 8px;
 
-    padding: 10px 0;
 
     color: var(--main-color);
 }
