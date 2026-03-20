@@ -7,17 +7,27 @@
     <link rel="stylesheet" href="styles/style.css">
 
 </head>
-<body>
+<body id="body">
     <!-- Header -->
 
     <header>
 
-        <h1><img src="assets/icons/functionality_icons/id-card.png" alt="">
-            PORTIFOLIO</h1>
+        <a href="#body">
+            <h1><img src="assets/icons/functionality_icons/id-card.png">
+                PORTIFOLIO</h1>
+        </a>
 
         <nav id="menu">
             <ul>
-                <li><a href="#" class="link"><img src="assets/icons/functionality_icons/burger-bar.png" alt="menu"></a></li>
+                <li><a href="#" id="burger"><img src="assets/icons/functionality_icons/burger-bar.png" alt="menu"></a></li>
+            </ul>
+
+            <ul id="menuOptions">
+                <li class="link"><a href="#body"><img src="assets/icons/functionality_icons/home.png"> Home</a></li>
+                <li class="link"><a href="#skills"><img src="assets/icons/functionality_icons/brain.png">Skills</a></li>
+                <li class="link"><a href="#projects"><img src="assets/icons/functionality_icons/github.png">Projetos</a></li>
+                <li class="link"><a href="#graduations"><img src="assets/icons/functionality_icons/graduation-cap.png">Formação</a></li>
+                <li class="link"><a><img src="assets/icons/functionality_icons/moon.png">Tema</a></li>
             </ul>
         </nav>
 
@@ -181,5 +191,6 @@
     <script src="scripts/projects_slider.js"></script>
     <script src="scripts/see_more.js"></script>
     <script src="scripts/lightbox.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>

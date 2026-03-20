@@ -6,15 +6,22 @@
     --icon-filter: invert(60%) sepia(80%) saturate(650%) hue-rotate(170deg) brightness(105%) contrast(105%);
     --icon-filter-hover: invert(55%) sepia(69%) saturate(517%) hue-rotate(167deg) brightness(98%) contrast(95%);
 
+    --menu-link-hover: #64abca;
+
     --main-track-backgroud-color: white;
     --h1-text-color: white;
     --background: #e4f2f8;
+    --backgorund-menu: rgba(109, 199, 255, 0.807);
 }
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -65,7 +72,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 28px 4%;
+    padding: 18px 4%;
 
     position: sticky;
     top: 0;
@@ -74,7 +81,11 @@ header {
     background-color: var(--main-color);
 }
 
-header > h1 {
+header > a {
+    text-decoration: none;
+}
+
+header > a > h1 {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -82,17 +93,18 @@ header > h1 {
     font-size: 24px;
 
     color: var(--h1-text-color);
-
-    cursor: pointer;
 }
 
-header > h1 > img {
+header > a > h1 > img {
     width: 28px;
 
     filter: invert(1);
 }
 
 /* MENU */
+#menu {
+    position: relative;
+}
 
 #menu > ul{
     display: flex;
@@ -104,11 +116,57 @@ header > h1 > img {
     text-decoration: none;
 }
 
-#menu > ul > li > a > img {
+#burger img {
     height: 35px;
     width: 35px;
 
     filter: invert(1);
+}
+
+#menuOptions {
+    display: none;
+    flex-direction: column;
+
+    position: absolute;
+    top: 86px;
+    right: 20px;
+
+    padding: 10px;
+
+    border-radius: 12px;
+
+    background-color: var(--backgorund-menu);
+}
+
+#menuOptions img {
+    height: 15px;
+    width: 15px;
+
+    filter: invert(1);
+}
+
+#menuOptions li {
+    list-style: none;
+    padding: 8px;
+}
+
+#menuOptions a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.link {
+    border-radius: 6px;
+}
+
+.link:hover{
+    background-color: var(--menu-link-hover);
 }
 
 /* ABOUT ME */
