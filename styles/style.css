@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-    --main-color: rgba(0, 157, 255, 0.633);
+    --main-color: rgb(109, 199, 255);
 
     --icon-filter: invert(60%) sepia(80%) saturate(650%) hue-rotate(170deg) brightness(105%) contrast(105%);
     --icon-filter-hover: invert(55%) sepia(69%) saturate(517%) hue-rotate(167deg) brightness(98%) contrast(95%);
@@ -66,6 +66,10 @@ header {
     align-items: center;
 
     padding: 28px 4%;
+
+    position: sticky;
+    top: 0;
+    z-index: 3;
 
     background-color: var(--main-color);
 }
