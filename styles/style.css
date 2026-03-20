@@ -7,11 +7,31 @@
     --icon-filter-hover: invert(55%) sepia(69%) saturate(517%) hue-rotate(167deg) brightness(98%) contrast(95%);
 
     --menu-link-hover: #64abca;
+    --header-icon-filter: invert(1);
 
     --main-track-backgroud-color: white;
     --h1-text-color: white;
+    --common-text-color: black;
     --background: #e4f2f8;
-    --backgorund-menu: rgba(109, 199, 255, 0.807);
+    --backgorund-menu: rgba(109, 199, 255, 0.873);
+}
+
+body.dark-mode {
+    --main-color: #37638a;
+    --background: rgb(33, 33, 48);
+    --main-track-backgroud-color: #242933;
+    --h1-text-color: #000000;
+    --common-text-color: white;
+    --backgorund-menu: rgba(33, 33, 48, 0.9);
+
+    /* ícones no tom de main-color */
+    --icon-filter: invert(62%) sepia(17%) saturate(500%) hue-rotate(160deg) brightness(95%) contrast(90%);
+    --icon-filter-hover: invert(62%) sepia(17%) saturate(500%) hue-rotate(160deg) brightness(110%) contrast(90%);
+
+    /* header continua diferente */
+    --header-icon-filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+
+    --menu-link-hover: #3f8bbf;
 }
 
 * {
@@ -32,6 +52,10 @@ body {
 
 body img {
     user-select: none;
+}
+
+body p {
+    color: var(--common-text-color);
 }
 
 /* LIGHTBOX */
@@ -98,12 +122,13 @@ header > a > h1 {
 header > a > h1 > img {
     width: 28px;
 
-    filter: invert(1);
+    filter: var(--header-icon-filter);
 }
 
 /* MENU */
 #menu {
     position: relative;
+    cursor: pointer;
 }
 
 #menu > ul{
@@ -120,16 +145,16 @@ header > a > h1 > img {
     height: 35px;
     width: 35px;
 
-    filter: invert(1);
+    filter: var(--header-icon-filter);
 }
 
 #menuOptions {
-    display: none;
+    display: flex;
     flex-direction: column;
 
     position: absolute;
-    top: 86px;
-    right: 20px;
+    top: 201%;
+    right: 65%;
 
     padding: 10px;
 
@@ -163,10 +188,22 @@ header > a > h1 > img {
 
 .link {
     border-radius: 6px;
+
+    user-select: none;
 }
 
 .link:hover{
     background-color: var(--menu-link-hover);
+}
+
+#theme img {
+    transition: 0.3s ease;
+}
+
+#theme:hover img {
+    content: url('../assets/icons/functionality_icons/night-day.png');
+
+    opacity: 0.8;
 }
 
 /* ABOUT ME */
