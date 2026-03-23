@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
 
 </head>
 <body id="body">
@@ -64,129 +65,108 @@
 
         </section>
 
-        <!-- Skills -->
-
-        <section id="skills">
-            <h2><img src="assets/icons/functionality_icons/brain.png" alt="brain">Minhas Skills</h2>
-
-            <article id="skillContainer">
-                <div class="skill">
-                    <img src="assets/icons/skills_icons/icons8-html-5.svg" alt="HTML5">
-                    <h3>HTML5</h3>
+        <div id="containerAll">
+            
+            <!-- Skills -->
+            <section id="skills">
+                <h2><img src="assets/icons/functionality_icons/brain.png" alt="brain">Minhas Skills</h2>
+                <article id="skillContainer">
+                    <div class="skill">
+                        <img src="assets/icons/skills_icons/icons8-html-5.svg" alt="HTML5">
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/icons/skills_icons/icons8-css3.svg" alt="CSS3">
+                        <h3>CSS3</h3>
+                    </div>
+            
+                    <div class="skill">
+                        <img src="assets/icons/skills_icons/icons8-javascript.svg" alt="JavaScript">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/icons/skills_icons/icons8-python.svg" alt="`Python">
+                        <h3>Python</h3>
+                    </div>
+            
+                    <div class="skill">
+                        <img src="assets/icons/skills_icons/icons8-flutter.svg" alt="Flutter">
+                        <h3>Flutter</h3>
+                    </div>
+                </article>
+            </section>
+            <!-- Projects -->
+            <section id="projects">
+                <h2><img src="assets/icons/functionality_icons/github.png" alt="brain">Meus Projetos</h2>
+                <!-- YTInstaller Project -->
+                <article class="projectContainer">
+                    <div class="projectImagesContainer">
+                        <img src="assets/images/ytInstaller/ytInstaller(1).png" alt="img1">
+                        <img src="assets/images/ytInstaller/ytInstaller(2).png" alt="img2">
+                        <img src="assets/images/ytInstaller/ytInstaller(3).png" alt="img3">
+                        <img src="assets/images/ytInstaller/ytInstaller(4).png" alt="img4">
+                        <a class="prevButton">&#10094;</a>
+                        <a class="nextButton">&#10095;</a>
+                    </div>
+                    <div class="projectInfo">
+                        <h3>ytInstaller</h3>
+                        <p>Aplicação desktop em Python com interface gráfica utilizando Flet, voltada para o download de conteúdos do YouTube a partir de URLs. <br>
+                        </p>
+                        <p class="moreText">A solução oferece ao usuário a opção de baixar vídeos com áudio, apenas vídeo ou extrair somente o áudio, com uma interface intuitiva e fluxo simplificado de uso. O sistema realiza o processamento e organização automática dos arquivos gerados. <br>
+            
+                        O projeto demonstra habilidades em desenvolvimento de interfaces gráficas, automação de tarefas, integração com bibliotecas externas para manipulação de mídia e foco em experiência do usuário.</p>
+                        <a class="toggleButton">▶Ver mais...</a>
+                        <a href="https://github.com/Cleyton-Alberto/YT-Installer-Videos" class="projectLink" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/functionality_icons/github.png" alt="ver no GitHub">Ver no GitHub ➥</a>
+                    </div>
+                </article>
+                <!-- SAC and PRICE project -->
+                <article class="projectContainer">
+                    <div class="projectImagesContainer">
+                        <img src="assets/images/tableGenerator/tableGenerator(1).png" alt="img1">
+                        <img src="assets/images/tableGenerator/tableGenerator(2).png" alt="img2">
+                        <img src="assets/images/tableGenerator/tableGenerator(3).png" alt="img3">
+                        <img src="assets/images/tableGenerator/tableGenerator(4).png" alt="img4">
+                        <img src="assets/images/tableGenerator/tableGenerator(5).png" alt="img5">
+                        <img src="assets/images/tableGenerator/tableGenerator(6).png" alt="img6">
+                        <img src="assets/images/tableGenerator/tableGenerator(7).png" alt="img7">
+                        <a class="prevButton">&#10094;</a>
+                        <a class="nextButton">&#10095;</a>
+                    </div>
+                    <div class="projectInfo">
+                        <h3>Gerador de tabelas SAC e PRICE</h3>
+            
+                        <p>Aplicação desenvolvida em Python para geração automática de tabelas de financiamento utilizando os sistemas PRICE e SAC. <br>
+                        </p>
+                        <p class="moreText">
+                            O sistema recebe dados como valor do empréstimo, taxa de juros e número de parcelas, realizando todos os cálculos financeiros e gerando uma planilha Excel estruturada com informações de amortização, juros, pagamentos e saldo devedor. <br>
+                            O projeto utiliza a biblioteca OpenPyXL para manipulação de arquivos Excel e foi desenvolvido com foco em lógica de programação e aplicações financeiras.
+                        </p>
+                        <a class="toggleButton">Ver mais...</a>
+                        <a href="https://github.com/Cleyton-Alberto/gerador-de-tabelas-PRICE-e-SAC-PRICE-and-SAC-table-generator" class="projectLink" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/icons/functionality_icons/github.png" alt="ver no GitHub">Ver no GitHub ➥</a>
+                    </div>
+                </article>
+            </section>
+            <section id="graduations">
+                <h2><img src="assets/icons/functionality_icons/graduation-cap.png" alt="graduation"> Formação</h2>
+                <article id="graduationContainer">
+                    <div class="graduation">
+                        <h4 class="date">2025</h4>
+                        <h3>Técnico em Informática</h3>
+                    </div>
+                    <div class="graduation">
+                        <h4 class="date">2026-2028</h4>
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    </div>
+                </article>
+            </section>
+                </main>
+            
+                <div id="lightbox" style="display: none;">
+            <img id="lightboxImg" src="" alt="Projeto Ampliado">
                 </div>
-
-                <div class="skill">
-                    <img src="assets/icons/skills_icons/icons8-css3.svg" alt="CSS3">
-                    <h3>CSS3</h3>
-                </div>
-                
-                <div class="skill">
-                    <img src="assets/icons/skills_icons/icons8-javascript.svg" alt="JavaScript">
-                    <h3>JavaScript</h3>
-                </div>
-
-                <div class="skill">
-                    <img src="assets/icons/skills_icons/icons8-python.svg" alt="`Python">
-                    <h3>Python</h3>
-                </div>
-                
-                <div class="skill">
-                    <img src="assets/icons/skills_icons/icons8-flutter.svg" alt="Flutter">
-                    <h3>Flutter</h3>
-                </div>
-            </article>
-
-        </section>
-
-        <!-- Projects -->
-
-        <section id="projects">
-            <h2><img src="assets/icons/functionality_icons/github.png" alt="brain">Meus Projetos</h2>
-
-            <!-- YTInstaller Project -->
-
-            <article class="projectContainer">
-                <div class="projectImagesContainer">
-                    <img src="assets/images/ytInstaller/ytInstaller(1).png" alt="img1">
-                    <img src="assets/images/ytInstaller/ytInstaller(2).png" alt="img2">
-                    <img src="assets/images/ytInstaller/ytInstaller(3).png" alt="img3">
-                    <img src="assets/images/ytInstaller/ytInstaller(4).png" alt="img4">
-
-                    <a class="prevButton">&#10094;</a>
-                    <a class="nextButton">&#10095;</a>
-                </div>
-
-                <div class="projectInfo">
-                    <h3>ytInstaller</h3>
-
-                    <p>Aplicação desktop em Python com interface gráfica utilizando Flet, voltada para o download de conteúdos do YouTube a partir de URLs. <br>
-                    </p>
-
-                    <p class="moreText">A solução oferece ao usuário a opção de baixar vídeos com áudio, apenas vídeo ou extrair somente o áudio, com uma interface intuitiva e fluxo simplificado de uso. O sistema realiza o processamento e organização automática dos arquivos gerados. <br>
-                    
-                    O projeto demonstra habilidades em desenvolvimento de interfaces gráficas, automação de tarefas, integração com bibliotecas externas para manipulação de mídia e foco em experiência do usuário.</p>
-
-                    <a class="toggleButton">▶Ver mais...</a>
-                    <a href="https://github.com/Cleyton-Alberto/YT-Installer-Videos" class="projectLink" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/icons/functionality_icons/github.png" alt="ver no GitHub">Ver no GitHub ➥</a>
-                </div>
-            </article>
-
-            <!-- SAC and PRICE project -->
-
-            <article class="projectContainer">
-                <div class="projectImagesContainer">
-                    <img src="assets/images/tableGenerator/tableGenerator(1).png" alt="img1">
-                    <img src="assets/images/tableGenerator/tableGenerator(2).png" alt="img2">
-                    <img src="assets/images/tableGenerator/tableGenerator(3).png" alt="img3">
-                    <img src="assets/images/tableGenerator/tableGenerator(4).png" alt="img4">
-                    <img src="assets/images/tableGenerator/tableGenerator(5).png" alt="img5">
-                    <img src="assets/images/tableGenerator/tableGenerator(6).png" alt="img6">
-                    <img src="assets/images/tableGenerator/tableGenerator(7).png" alt="img7">
-
-                    <a class="prevButton">&#10094;</a>
-                    <a class="nextButton">&#10095;</a>
-                </div>
-
-                <div class="projectInfo">
-                    <h3>Gerador de tabelas SAC e PRICE</h3>
-                    
-                    <p>Aplicação desenvolvida em Python para geração automática de tabelas de financiamento utilizando os sistemas PRICE e SAC. <br>
-                    </p>
-
-                    <p class="moreText">
-                        O sistema recebe dados como valor do empréstimo, taxa de juros e número de parcelas, realizando todos os cálculos financeiros e gerando uma planilha Excel estruturada com informações de amortização, juros, pagamentos e saldo devedor. <br>
-                        O projeto utiliza a biblioteca OpenPyXL para manipulação de arquivos Excel e foi desenvolvido com foco em lógica de programação e aplicações financeiras.
-                    </p>
-
-                    <a class="toggleButton">Ver mais...</a>
-                    <a href="https://github.com/Cleyton-Alberto/gerador-de-tabelas-PRICE-e-SAC-PRICE-and-SAC-table-generator" class="projectLink" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/icons/functionality_icons/github.png" alt="ver no GitHub">Ver no GitHub ➥</a>
-                </div>
-            </article>
-        </section>
-
-
-        <section id="graduations">
-            <h2><img src="assets/icons/functionality_icons/graduation-cap.png" alt="graduation"> Formação</h2>
-
-            <article id="graduationContainer">
-                <div class="graduation">
-                    <h4 class="date">2025</h4>
-                    <h3>Técnico em Informática</h3>
-                </div>
-
-                <div class="graduation">
-                    <h4 class="date">2026-2028</h4>
-                    <h3>Análise e Desenvolvimento de Sistemas</h3>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <div id="lightbox" style="display: none;">
-        <img id="lightboxImg" src="" alt="Projeto Ampliado">
-    </div>
+        </div>
 
     <script src="scripts/projects_slider.js"></script>
     <script src="scripts/see_more.js"></script>

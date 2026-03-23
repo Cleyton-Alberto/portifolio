@@ -439,8 +439,8 @@ header > a > h1 > img {
 
     height: 100%;
     width: 100%;
-    max-height: 300px;
-    max-width: 600px;
+    max-height: 384px;
+    max-width: 768px;
 
     overflow: hidden;
 

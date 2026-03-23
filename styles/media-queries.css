@@ -1,0 +1,63 @@
+@media screen and (min-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 300px minmax(0, 1fr);
+        gap: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 100%;
+    }
+
+    #aboutMe {
+        width: 300px;
+        position: sticky;
+        top: 65px;
+        align-self: self-start;
+    }
+
+    #containerAll, #projects, #skills, #graduations {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #skillContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+
+    #projects .projectContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    header {
+        width: 100vw;
+        padding: 18px 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 902px) {
+    body.dark-mode #menuOptions img, 
+    body.dark-mode #menuOptions a {
+        filter: var(--header-icon-filter);
+    }
+
+    #burger {
+        display: none;
+    }
+
+    #menuOptions {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+    }
+}
